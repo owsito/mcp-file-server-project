@@ -1,0 +1,24 @@
+{
+  "name": "student-mcp-file-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A sandboxed MCP file-server connector for a multi-session agent handoff demo.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "stdio": "node server.js --stdio",
+    "test": "node --test",
+    "git:init": "node scripts/init-git.js",
+    "demo": "node scripts/demo-client.js",
+    "inspector": "npx @modelcontextprotocol/inspector"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.25.2",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "zod": "^3.25.76"
+  }
+}
